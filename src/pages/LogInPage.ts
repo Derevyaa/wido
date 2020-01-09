@@ -1,5 +1,5 @@
-import BasePage from 'src/pages/BasePage';
 import AllureReporter from '@wdio/allure-reporter';
+import BasePage from 'src/pages/BasePage';
 
 class LoginPage extends BasePage {
 
@@ -19,22 +19,20 @@ class LoginPage extends BasePage {
         return $("//*[@class='panelTrigger']").getText();
     }
 
-    
     get open() {
-        
-        AllureReporter.addStep("open url login page URL" );
-                return browser.url('/symfony/web/index.php/auth/login');
-        
+
+        AllureReporter.addStep('open url login page URL' );
+        return browser.url('/symfony/web/index.php/auth/login');
+
     }
 
     loginWithCredentials(username, password) {
         this.username.setValue(username);
         this.password.setValue(password);
         this.submit.click();
-       
+
     }
 
- 
 }
 
 export default new LoginPage();

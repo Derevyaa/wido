@@ -38,12 +38,12 @@ class AdminPage extends BasePage {
     }
 
     clickAddUserButton() {
-        this.addNewUser.click
+        this.addNewUser.click;
     }
 
     createNewUser(username, email, password) {
         this.username.setValue(username);
-        this.email.setValue(email)
+        this.email.setValue(email);
         this.password.setValue(password);
         this.submit.click();
     }

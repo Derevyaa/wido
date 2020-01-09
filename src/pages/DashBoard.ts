@@ -1,6 +1,5 @@
 import BasePage from 'src/pages/BasePage';
 
-
 class DashBoard extends BasePage {
 
     get dashboardName() {
@@ -11,12 +10,10 @@ class DashBoard extends BasePage {
         return browser.url('/symfony/web/index.php/dashboard');
     }
 
-  
-getDashboardName(){
+getDashboardName() {
     return this.dashboardName.getText();
 }
 
- 
 }
 
 export default new DashBoard();

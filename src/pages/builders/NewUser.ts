@@ -1,4 +1,4 @@
-import { NewUserBuilder } from 'src/pages/builders/NewUserBuilder'
+import { NewUserBuilder } from 'src/pages/builders/NewUserBuilder';
 
 export class NewUsers {
     userName: string;

@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 import BasePage from 'src/pages/BasePage';
 import * as Collections from 'typescript-collections';
 
-let Params = require('./Params.page.js');
+const Params = require('./Params.page.js');
 
 class JobCategories {
 
 get addCategoryBtn() {
-    return $("#btnAdd");
+    return $('#btnAdd');
 }
 
 get addCategoryNameInput() {
@@ -15,32 +15,28 @@ get addCategoryNameInput() {
 }
 
 get table() {
-    return $("#resultTable");
+    return $('#resultTable');
 }
-
-
 
 testStream() {
-    var myList = new Collections.LinkedList<string>();
-    myList.add("test1");
-    myList.add("test2");
-    myList.add("test3");
-    myList.add("test4");
+    const myList = new Collections.LinkedList<string>();
+    myList.add('test1');
+    myList.add('test2');
+    myList.add('test3');
+    myList.add('test4');
 
-    myList.forEach(function(myList){
-       //console.log(myList);
-       
+    myList.forEach(function(myList) {
+       // console.log(myList);
+
     });
-    
-
 
 }
 
-printValue(value : string) {
-    console.log("value : "+ value);
+printValue(value: string) {
+    console.log('value : '+ value);
 }
 
-addNewCategory(name: string){
+addNewCategory(name: string) {
     this.addCategoryBtn.click();
     this.addCategoryNameInput.addValue(name);
 }

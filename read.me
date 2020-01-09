@@ -1,0 +1,13 @@
+# config environment
+open cmd navigate to project folder 
+run init if there are no pacage.json file 
+npm init -y 
+
+npm i --save-dev @wdio/cli
+npm install typescript-collections --save
+cd /node_modules/.bin/
+wdio config -y
+
+# run tests 
+npm test
+npm run report

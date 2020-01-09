@@ -1,10 +1,10 @@
 {
-  "name": "webdriverio_v5_typescript",
+  "name": "wdio_v1_typescript",
   "version": "1.0.0",
-  "description": "Boilerplate project using version 5 WebdriverIO & TypeScript.",
+  "description": "Test project using version 5 WebdriverIO & TypeScript.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpolley/WebdriverIO_v5_TypeScript.git"
+    "url": "git+https://github.com/Derevyaa/wido.git"
   },
   "scripts": {
     "test": "wdio",
@@ -34,6 +34,7 @@
     "tslint": "^5.20.1",
     "typescript": "^3.7.2",
     "wdio-chromedriver-service": "^5.0.2",
+    "wdio-docker-service": "^2.1.5-rc.0",
     "webdriverio": "^5.16.9"
   },
   "dependencies": {

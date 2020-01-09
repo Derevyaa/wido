@@ -5,14 +5,12 @@ export class NewUserBuilder {
     private _userName: string ;
     private _email: string ;
     private _password: string ;
-    
 
     constructor(userName: string, email: string, password: string) {
         this._userName = userName;
         this._email = email;
         this._password = password;
     }
-
 
     setUserName(userName: string) {
         this._userName = userName;
@@ -32,8 +30,6 @@ export class NewUserBuilder {
     build() {
         return new NewUsers(this);
     }
-
-   
 
     get user() {
         return this._userName;
